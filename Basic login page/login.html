@@ -1,0 +1,39 @@
+<htmL>
+    <head>
+        <title>Login Page</title>
+        <style>
+            body{
+                background-color:violet}
+            h2{
+                text-align: center;
+                color: black;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            form{
+                text-align: center;
+                font: italic;
+                width: 200px;
+                padding: 20px;
+                margin: auto;
+                border: 2px solid black;
+                border-radius: 10px;
+                background-color: lightgray;
+            }
+            form:hover{
+                box-shadow: 5px 10px 18px #888888;
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>LOGIN PAGE</h2>
+        <form action="success.html" method="GET">
+            Username <input type="text" name="username"  placeholder="Enter username" required><br><br>
+            Password <input type="password" name="password" placeholder="min length of 6"  pattern=".{8,}" required><br><br>
+            <button type="submit" style="background-color: green; color: black;">Login</button>
+            <button type="reset" style="background-color: red; color: black;">Reset</button> 
+
+        </form>
+
+    </body>
+</htmL>
