@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Semantic HTML Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; }
+        header, footer { background: #333; color: white; padding: 1rem; text-align: center; }
+        nav ul { list-style: none; padding: 0; }
+        nav li { display: inline; margin: 0 1rem; }
+        nav a { color: white; text-decoration: none; }
+        article { margin: 20px 0; padding: 20px; border-left: 4px solid #007bff; }
+        aside { background: #f8f9fa; padding: 20px; margin: 20px 0; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background: #f1f1f1; }
+        figure { text-align: center; margin: 20px 0; }
+        details { margin: 20px 0; padding: 10px; border: 1px solid #ddd; }
+        mark { background: yellow; }
+    </style>
+</head>
+<body>
+    <!-- Header with semantic branding -->
+    <header>
+        <h1>Perplexity Engineering Blog</h1>
+        <p>Insights on web dev, 3D printing, IoT, and startups</p>
+    </header> [web:1][web:2]
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav> [web:1][web:11]
+
+    <!-- Main content -->
+    <main>
+        <!-- Article 1 -->
+        <article>
+            <header>
+                <h2>Building Semantic Web Apps</h2>
+                <p>Published <time datetime="2026-02-09">Feb 9, 2026</time> by <cite>Perplexity AI</cite></p> [web:3][web:11]
+            </header>
+            <p>Semantic tags like <code>&lt;article&gt;</code> and <strong>&lt;section&gt;</strong> improve accessibility and SEO. Use <em>emphasis</em> for stress, not styling.</p>
+            <figure>
+                <img src="https://via.placeholder.com/400x200?text=Semantic+Diagram" alt="Semantic HTML structure diagram">
+                <figcaption>Hierarchy of semantic elements [generated placeholder].</figcaption> [web:1][web:13]
+            </figure>
+            <mark>Highlight key updates in 2026 standards.</mark> [web:9]
+        </article>
+
+        <!-- Section with aside -->
+        <section id="projects">
+            <h2>Recent Projects</h2>
+            <article>
+                <h3>IoT Prototyping with 3D Printing</h3>
+                <p>Integrating sensors via semantic HTML dashboards.</p>
+            </article>
+            <aside>
+                <h4>Quick Tip</h4>
+                <p>Use <small>small text</small> for fine print; <abbr title="Asynchronous JavaScript and XML">AJAX</abbr> for dynamic loads. [web:9][web:11]</p>
+            </aside>
+        </section> [web:2][web:7]
+
+        <!-- Table for structured data -->
+        <section>
+            <h2>Stock Market Summary (Feb 2026)</h2>
+            <table>
+                <caption>Top Crypto & Stocks Performance [web:15]</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Asset</th>
+                        <th scope="col">Price (USD)</th>
+                        <th scope="col">Change (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Bitcoin</th>
+                        <td>$95,000</td>
+                        <td>+5.2%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tesla</th>
+                        <td>$450</td>
+                        <td>-1.1%</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Average</td>
+                        <td>+2.05%</td>
+                    </tr>
+                </tfoot>
+            </table> [web:1][web:15]
+        </section>
+
+        <!-- Details/Summary for FAQ -->
+        <details>
+            <summary>What are semantic tags?</summary>
+            <p>Elements that convey meaning, like <code>&lt;nav&gt;</code>, aiding screen readers and crawlers. <address>For support: support@perplexity.ai</address></p> [web:11][web:13]
+        </details> [web:11]
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Perplexity AI. <time datetime="2026">2026</time></p>
+        <address>Based in Kukatpally, Telangana, India</address> [web:3]
+    </footer> [web:1]
+
+    <!-- Media example -->
+    <figure>
+        <video controls width="400">
+            <source src="sample.mp4" type="video/mp4">
+            <track src="captions.vtt" kind="captions" srclang="en" label="English">
+            Your browser does not support video.
+        </video>
+        <figcaption>Demo of IoT project animation.</figcaption> [web:13]
+    </figure>
+    <audio controls>
+        <source src="podcast.mp3" type="audio/mpeg">
+    </audio> [web:13]
+</body>
+</html>
