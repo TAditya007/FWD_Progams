@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Form Example</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        fieldset { margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 8px; margin-bottom: 10px; box-sizing: border-box; }
+        button { padding: 10px 20px; background: #007bff; color: white; border: none; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1>Complete Forms & Input Handling Demo</h1>
+    <p>This form uses all tags and attributes from the topics: forms, elements, advanced inputs, types, validation. Try submitting to see native browser validation.</p> [web:16][web:18][web:23]
+
+    <form action="/submit" method="post" autocomplete="on" novalidate id="mainForm">
+        <!-- Fieldset for grouping -->
+        <fieldset>
+            <legend>Personal Info</legend> [web:16]
+            <label for="fname">First Name (required, minlength):</label>
+            <input type="text" id="fname" name="fname" required minlength="2" maxlength="50" placeholder="Enter first name" pattern="[A-Za-z]+" title="Letters only"> [web:16][web:20]
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" value="Default" readonly> [web:16]
+
+            <label for="email">Email (required):</label>
+            <input type="email" id="email" name="email" required multiple autocomplete="email"> [web:16][web:23]
+
+            <label for="phone">Phone (tel, pattern):</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"> [web:20]
+
+            <label for="url">Website:</label>
+            <input type="url" id="url" name="url" placeholder="https://example.com"> [web:23]
+        </fieldset>
+
+        <fieldset>
+            <legend>Search & Text Inputs</legend>
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search" spellcheck> [web:23]
+
+            <label for="pass">Password (disabled example):</label>
+            <input type="password" id="pass" name="pass" disabled minlength="8"> [web:16]
+
+            <label for="number">Number (min/max/step):</label>
+            <input type="number" id="number" name="number" min="10" max="100" step="10" value="50"> [web:16][web:19]
+
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" min="0" max="100" step="10" value="50"> [web:23]
+        </fieldset>
+
+        <fieldset>
+            <legend>Dates & Advanced</legend>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required> [web:23]
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time"> [web:23]
+
+            <label for="datetime">DateTime:</label>
+            <input type="datetime-local" id="datetime" name="datetime"> [web:23]
+
+            <label for="month">Month:</label>
+            <input type="month" id="month" name="month"> [web:23]
+
+            <label for="week">Week:</label>
+            <input type="week" id="week" name="week"> [web:23]
+
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color" value="#ff0000"> [web:23]
+
+            <label for="file">File:</label>
+            <input type="file" id="file" name="file" multiple accept="image/*"> [web:23]
+        </fieldset>
+
+        <fieldset>
+            <legend>Selections & Textarea</legend>
+            <label for="message">Message (autofocus):</label>
+            <textarea id="message" name="message" rows="4" cols="50" autofocus required maxlength="500" placeholder="Enter your message..."></textarea> [web:16]
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" checked>
+            <label for="other">Other</label> [web:23]
+
+            <label>Hobbies (checkbox):</label>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="coding" name="hobbies" value="coding" checked>
+            <label for="coding">Coding</label> [web:23]
+
+            <label for="country">Country (select):</label>
+            <select id="country" name="country" size="3" multiple required>
+                <optgroup label="Asia">
+                    <option value="IN">India</option>
+                    <option value="US">USA</option>
+                </optgroup>
+            </select> [web:16]
+        </fieldset>
+
+        <!-- Hidden input -->
+        <input type="hidden" name="hidden" value="secret"> [web:23]
+
+        <!-- Buttons -->
+        <button type="submit">Submit (validates)</button> [web:16]
+        <button type="reset">Reset</button> [web:23]
+        <button type="button" formnovalidate>Skip Validation</button> [web:17]
+
+        <!-- Datalist example for suggestions -->
+        <label for="fruit">Fruit (with list):</label>
+        <input type="text" id="fruit" name="fruit" list="fruits">
+        <datalist id="fruits">
+            <option value="Apple">
+            <option value="Banana">
+        </datalist> [web:16]
+    </form>
+</body>
+</html>
