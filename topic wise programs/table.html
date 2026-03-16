@@ -1,32 +1,65 @@
-<html>
-    <head>
-        <title>
-            Table
-        </title>
-    </head>
-    <body>
-        <table border = "10" align = "Center" bordercolor = "blue" >
-            <tr><th colspan = "4 " bgcolor = "pink" > Student Details </th></tr>
-            <tr><th rowspan = "5"  bgcolor = "pink">  Section 10 </th></tr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Tags Example</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse; /* Optional: for single border lines */
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr{background-color:pink;}
+    </style>
+</head>
+<body>
+
+    <h1>Example of HTML Table Tags</h1>
+
+    <table >
+        <!-- The <caption> tag defines a table caption -->
+        <caption>Monthly Savings Data</caption>
+        
+        <!-- The <colgroup> and <col> tags specify column properties for formatting -->
+        
+        <!-- The <thead> tag groups the header content -->
+        <thead>
+            
+                <!-- The <th> tag defines a header cell -->
+                <th>Month</th>
+                <th>Savings</th>
+                <th>Goal Met?</th>
+            
+        </thead>
+        
+        <!-- The <tbody> tag groups the body content -->
+        <tbody>
             <tr>
-                <th> Name </th>
-                <th> Roll No </th>
-                <th> Branch </th>
+                <!-- The <td> tag defines a standard data cell -->
+                <td>January</td>
+                <td>$100</td>
+                <td>No</td>
             </tr>
             <tr>
-                <td> Akshitha </td>
-                <td> 233 </td>
-                <td> Cse </td>
+                <td>February</td>
+                <td>$80</td>
+                <td>No</td>
             </tr>
+        </tbody>
+        
+        <!-- The <tfoot> tag groups the footer content -->
+        <tfoot>
             <tr>
-                <td> Meghana </td>
-                <td> 245 </td>
-                <td> AiDs </td>
+                <td>Total</td>
+                <td colspan="2">$180</td>
+              
             </tr>
-            <tr>
-                <td> harini </td>
-                <td> 231 </td>
-                <td> Csit </td>
-            </tr>
-        </table>
-    </body>
+        </tfoot>
+    </table>
+
+</body>
+</html>
